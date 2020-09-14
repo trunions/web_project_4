@@ -1,0 +1,14 @@
+@import url(../profile/__avatar/profile__avatar.css);
+@import url(../profile/__avatar/__avatar-pic/profile__avatar-pic.css);
+@import url(../profile/__button/__button-info/profile__button-info.css);
+@import url(../profile/__button/__button-add/profile__button-add.css);
+@import url(../profile/__info/profile__info.css);
+@import url(../profile/__info/__info-title/profile__info-title.css);
+@import url(../profile/__info/__info-subtitle/profile__info-subtitle.css);
+
+
+.profile{
+    margin: 40px auto;
+    display: flex;
+    min-width: 884px;
+}
