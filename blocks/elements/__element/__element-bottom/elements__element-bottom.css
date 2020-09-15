@@ -1,0 +1,6 @@
+.elements__element-bottom{
+    min-width: 246px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
