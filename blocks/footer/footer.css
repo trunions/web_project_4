@@ -4,3 +4,10 @@
     min-width: 882px;
     margin: auto;
 }
+
+
+@media screen and (max-width:320px){
+    .footer{
+        min-width:282px;
+    }
+}

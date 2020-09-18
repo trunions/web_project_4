@@ -4,3 +4,11 @@
     font-size: 42px;
     line-height: 56px;
 }
+
+@media screen and (max-width:320px){
+    .profile__info-title{
+        font-size:22px;
+        text-align:center;
+    }
+}
+

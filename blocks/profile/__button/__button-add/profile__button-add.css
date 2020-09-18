@@ -6,3 +6,11 @@
     min-width: 150px;
     padding: 16px 64px;
 }
+
+
+@media screen and (max-width:320px){
+    .profile__button-add{
+        min-width:282px;
+        
+    }
+}
