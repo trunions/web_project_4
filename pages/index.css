@@ -5,6 +5,18 @@
 @import url(../blocks/profile/profile.css);
 @import url(../blocks/elements/elements.css);
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/modal/modal.css);
+@import url(../blocks/form/form.css);
+
+.line {
+    border: 1px solid #000000;
+    opacity: .2;
+    width: 358px;
+    height: 0px;
+    margin-left: 36px;
+  }
+
+
 
 
 
