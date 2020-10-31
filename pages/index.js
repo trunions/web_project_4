@@ -6,6 +6,7 @@ const nameInput = document.querySelector('.form__input_type_name');
 const jobInput = document.querySelector('.form__input_type_job');
 const profileName = document.querySelector('.profile__info-title');
 const profileJob = document.querySelector('.profile__info-subtitle');
+const color = document.querySelector('.modal__container');
 
 
 form.addEventListener('submit', (event) => {
@@ -13,31 +14,22 @@ form.addEventListener('submit', (event) => {
  
   profileName.textContent = nameInput.value;
   profileJob.textContent = jobInput.value;
-  
-  const modal = document.querySelector('.modal__open');
-    modal.classList.add('modal');
 
-    const color = document.querySelector('.modal__container_black');
-    color.classList.add('modal__container');
+  toggleModal();
+  toggleColor();
   
 })
 
+function toggleModal(){
+    modal.classList.toggle('modal');
+}
 
-editButton.addEventListener('click', function() {
+function toggleColor(){
+    color.classList.toggle('modal__container');
+}
 
-    const modal = document.querySelector('.modal');
-    modal.classList.remove('modal')
+editButton.addEventListener('click', toggleModal);
+editButton.addEventListener('click', toggleColor);
 
-    const color = document.querySelector('.modal__container');
-    color.classList.remove('modal__container');
-    
-})
-
-closeButton.addEventListener('click', function() {
-
-    const modal = document.querySelector('.modal__open');
-    modal.classList.add('modal');
-
-    const color = document.querySelector('.modal__container_black');
-    color.classList.add('modal__container');
-})
+closeButton.addEventListener('click' ,toggleModal);
+closeButton.addEventListener('click', toggleColor);

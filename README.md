@@ -1,16 +1,24 @@
 # Project 4: Around The U.S.
+## By Trista Runions
 
 ### Overview
+* Project Description
+* Tech Used
+* Plans for Finalizing Project
 
-* Figma
-* Images
+**Intro**
 
-**Figma**
+This project was an introduction to Javascript. I created a profile using HTML and CSS. A pop up was created using a mixture of all three. The pop up will come up when you push the edit button. You can edit the information and close the pop up using either the close or save buttons.  
 
-* [Link to the project in Figma](https://www.figma.com/file/mUgu8OSHWE0M6p6vfwmdu9/Sprint-4-Around-The-U.S.-desktop-mobile?node-id=0%3A1)
+My project can be found at: https://trunions.github.io/web_project_4/.
 
-**Images**
+**Tech Used**
 
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
+ I used Figma and Visual Studio to complete this project. I was able to use techniques like psuedo rules and different display styles like flexbox and grid. I was able to use basic javascript to make the page interactive with a pop up window. 
 
-Have fun with JavaScript!
+**Plans for Finalizing Project**
+
+ I'll be changing anything I need to to pass my code review. stayed tuned! 
+
+
+* Thank you to whoever reviews my code!  
