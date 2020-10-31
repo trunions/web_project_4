@@ -3,6 +3,11 @@
     max-height:33px;
 }
 
+.header__image:hover{
+    opacity:.8;
+
+}
+
 @media screen and (min-width:320px){
     .header__image{
         max-width:126px;

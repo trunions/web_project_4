@@ -28,7 +28,7 @@
             <h2 class='profile__info-subtitle'>Explorer</h2>
         </div>
         
-          <div>
+          <div class = 'profile__button'>
               <button class='profile__button-add' type='button'>
                   <img src='./images/add-button.png'>
               </button>
@@ -73,7 +73,7 @@
                 <li class='elements__element-group'>
                     <img class='elements__element-image' src='../web_project_4/images/vanoise.png'>
                     <div class='elements__element-bottom'>
-                    <h1 class='elements__element-text'>Vanoise Nationa...</h1>
+                    <h1 class='elements__element-text'>Vanoise National Park</h1>
                     <img class='elements__element-heart' src='../web_project_4/images/Heart.png'>
                     </div>
 
@@ -94,9 +94,8 @@
             <h1 class ='footer__text'>© 2020 Around The U.S.</h1>
         </footer>
 
-
-        <div class="modal modal__open">
-            <div class="modal__container">
+        <div class="modal__container modal__container_black">  
+           <div class="modal modal__open">
                 <form action="#" class="form">
                   <div class="form__title">Edit profile</div>
                     <input type='text' name='name' class="form__input form__input_type_name" value="Jacques Cousteau">
@@ -105,10 +104,13 @@
                   <div class="line"></div>
                     <button class="form__button" type="submit">Save</button>
                 </form>
-                <button class="form__button-close"><img class='form__button-close' src='./images/Close-Icon.png' alt='close button'></button>
+                <div class = 'form__button-close'>
+                <button class = 'form__button-close'>
+                    <img class = 'form__button-close' src='./images/Close-Icon.png' alt='close button'></button>
+                </div>
             </div>
         </div>
-    </div>
+    
     <script src='./pages/index.js'></script>
     </body>
 
