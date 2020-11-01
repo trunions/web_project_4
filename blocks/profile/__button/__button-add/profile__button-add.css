@@ -12,6 +12,12 @@
     opacity: .8;
 }
 
+@media screen and (max-width:670px){
+    .profile__button-add{
+        margin:0;
+    }
+}
+
 
 @media screen and (max-width:320px){
     .profile__button-add{

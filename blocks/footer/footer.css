@@ -1,8 +1,8 @@
 @import url(../footer/__text/footer__text.css);
 
 .footer{
-    min-width: 882px;
-    margin: auto;
+    max-width: 882px;
+    margin: 67px 200px 60px;
 }
 
 
