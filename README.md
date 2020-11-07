@@ -20,5 +20,7 @@ My project can be found at: https://trunions.github.io/web_project_4/.
 
  I'll be changing anything I need to to pass my code review. stayed tuned! 
 
+ 11/07/2020: I cleaned up my code to make it easier to read and to function better. I changed some styling to work better with the page. 
+
 
 * Thank you to whoever reviews my code!  

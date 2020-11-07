@@ -1,0 +1,17 @@
+.elements__list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template: 50% 50%/32% 32% 33%;
+    grid-row-gap: 20px;
+    grid-column-gap: 17px;
+}
+
+
+@media screen and (max-width:320px){
+    .elements__list{
+        grid-template:361px 361px 361px 361px 361px 361px / 100%;;
+
+    }
+}

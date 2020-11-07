@@ -1,0 +1,6 @@
+.elements__card-bottom{
+    min-width: 246px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

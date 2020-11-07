@@ -1,0 +1,11 @@
+.elements__card-heart{
+    background: white;
+    min-width: 29px;
+    background-image: url(../../../images/heart.svg);
+    background-repeat: no-repeat;
+    border: unset;
+    height: 25px;
+    background-position: center;
+    margin-right: 30px;
+}
+}

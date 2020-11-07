@@ -1,11 +1,11 @@
-@import url(../profile/__avatar/profile__avatar.css);
-@import url(../profile/__avatar/__avatar-pic/profile__avatar-pic.css);
-@import url(../profile/__info/__info-button/profile__info-button.css);
-@import url(../profile/__button/__button-add/profile__button-add.css);
-@import url(../profile/__info/profile__info.css);
-@import url(../profile/__info/__info-title/profile__info-title.css);
-@import url(../profile/__info/__info-subtitle/profile__info-subtitle.css);
+@import url(../profile/__avatar-pic/profile__avatar-pic.css);
+@import url(../profile/__info-button/profile__info-button.css);
 @import url(../profile/__button/profile__button.css);
+@import url(../profile/__button-add/profile__button-add.css);
+@import url(../profile/__info/profile__info.css);
+@import url(../profile/__info-button/profile__info-button.css);
+@import url(../profile/__info-subtitle/profile__info-subtitle.css);
+@import url(../profile/__info-title/profile__info-title.css);
 
 .profile{
     margin: 40px auto;

@@ -1,9 +1,9 @@
 @font-face{
     font-family:"Inter";
-    font-weight:normal;
+    font-weight:400;
     font-display:swap;
-    src: url(./Inter-ExtraLight.woff) format("woff"),
-      url(./Inter-ExtraLight.woff2) format("woff2");
+    src: url(./Inter-Regular.woff) format("woff"),
+      url(./Inter-Regular.woff2) format("woff2");
 }
 
 @font-face{
@@ -18,6 +18,6 @@
     font-family:"Inter";
     font-weight:900;
     font-display:swap;
-    src: url(./Inter-Bold.woff) format("woff"),
-      url(./Inter-Bold.woff2) format("woff2");
+    src: url(./Inter-Black.woff) format("woff"),
+      url(./Inter-Black.woff2) format("woff2");
 }

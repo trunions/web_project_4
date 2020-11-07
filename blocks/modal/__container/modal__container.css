@@ -1,5 +1,12 @@
-@import url(../__container/__container_black/modal__container-black.css);
-
 .modal__container{
-    display:none;
+    display: flex;
+    align-items: center;
+    background: white;
+    opacity: 1;
+    width: 430px;
+    position: fixed;
+    top: 195px;
+    left: 425px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
 }
