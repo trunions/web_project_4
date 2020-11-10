@@ -1,11 +1,17 @@
 @import url(./__image/header__image.css);
-@import url(./__line/header__line.css);
 
 .header{
-    margin: 45px 200px 40px;
+    margin: 45px 200px 0px;
     max-width: 884px;
-    border-bottom: 1px solid #545454;
-    opacity: 0.7;
+    border-bottom: 1px solid;
+    border-color:rgba(54,54,54,0.7);
+    
+}
+
+@media screen and (max-width:1060px){
+    .header{
+        margin: 45px 90px 0px;
+    }
 }
 
 

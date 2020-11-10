@@ -7,16 +7,11 @@ const jobInput = document.querySelector('.form__input_type_job');
 const profileName = document.querySelector('.profile__info-title');
 const profileJob = document.querySelector('.profile__info-subtitle');
 
+form.addEventListener('submit', editForm);
 
 form.addEventListener('submit', (event) =>{
   event.preventDefault();
-  editForm();
 })
-
-if ('.modal_open'){
-  profileName.textContent = nameInput.value;
-  profileJob.textContent = jobInput.value;
-}
 
 function editForm(){
  
@@ -28,8 +23,16 @@ function editForm(){
 }
 
 function toggleModal(){
+    modal.classList.toggle('modal_open');
     modal.classList.toggle('modal');
+
+    if(modal.classList.contains='modal_open'){
+      nameInput.value = nameInput.value;
+      jobInput.value = jobInput.value;
+    }
 }
+
+
 
 editButton.addEventListener('click', toggleModal);
 

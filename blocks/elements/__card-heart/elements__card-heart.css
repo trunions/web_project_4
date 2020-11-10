@@ -6,6 +6,10 @@
     border: unset;
     height: 25px;
     background-position: center;
-    margin-right: 30px;
+    margin-right: 15px;
 }
+
+
+.elements__card-heart:hover{
+    opacity: 0.6;
 }
