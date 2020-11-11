@@ -19,7 +19,7 @@ My project can be found at: https://trunions.github.io/web_project_4/.
 **Plans for Finalizing Project**
 
  I'll be changing anything I need to to pass my code review. stayed tuned! 
-
+ 
  11/07/2020: I cleaned up my code to make it easier to read and to function better. I changed some styling to work better with the page. 
 
  11/09/2020: I made my page reactive to the width of the page. The layout should now not break as the page is made smaller. I also fixed some margins in the pop up page and profile block. 
