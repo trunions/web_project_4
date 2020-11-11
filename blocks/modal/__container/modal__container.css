@@ -6,11 +6,10 @@
 }
 
 
-@media screen and (max-width:320px){
+@media screen and (max-width:751px){
     .modal__container{
         width:282px;
-        position:sticky;
-        left:19px;
-        top:123px;
+        position: relative;
+        top:-360px;
     }
 }

@@ -4,3 +4,6 @@
 @import url(../form/__button-close/form__button-close.css);
 
 
+.form{
+    position:relative;
+}

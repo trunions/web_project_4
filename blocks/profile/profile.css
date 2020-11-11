@@ -1,5 +1,6 @@
 @import url(../profile/__avatar-pic/profile__avatar-pic.css);
 @import url(../profile/__info-button/profile__info-button.css);
+@import url(../profile/__button/profile__button.css);
 @import url(../profile/__button-add/profile__button-add.css);
 @import url(../profile/__info/profile__info.css);
 @import url(../profile/__info-button/profile__info-button.css);
@@ -9,6 +10,7 @@
 .profile{
     margin: 40px auto;
     display: flex;
+    align-items:center;
     max-width: 884px;
 }
 

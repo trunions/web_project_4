@@ -6,26 +6,12 @@
     background-repeat:no-repeat;
     min-width: 150px;
     height:50px;
-    margin: 28px 0 0 165px;
     cursor: pointer;
 }
 
 .profile__button-add:hover{
     opacity: .6;
 }
-
-@media screen and (max-width:1060px){
-    .profile__button-add{
-        margin:28px 0 0 30px;
-    }
-}
-
-@media screen and (max-width:785px){
-    .profile__button-add{
-        margin: 28px 0 0;
-    }
-}
-
 
 @media screen and (max-width:755px){
     .profile__button-add{

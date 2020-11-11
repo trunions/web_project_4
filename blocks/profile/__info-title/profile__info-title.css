@@ -1,5 +1,6 @@
 .profile__info-title{
     font-weight: 500;
+    margin:0;
     font-size: 42px;
     line-height: 56px;
     text-overflow: ellipsis;
@@ -14,6 +15,7 @@
         font-size:22px;
         text-align:center;
         margin:0;
+        line-height:27px;
     }
 }
 

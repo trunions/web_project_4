@@ -7,13 +7,8 @@ const jobInput = document.querySelector('.form__input_type_job');
 const profileName = document.querySelector('.profile__info-title');
 const profileJob = document.querySelector('.profile__info-subtitle');
 
-form.addEventListener('submit', editForm);
-
-form.addEventListener('submit', (event) =>{
+function handleFormSubmit(event){
   event.preventDefault();
-})
-
-function editForm(){
  
   profileName.textContent = nameInput.value;
   profileJob.textContent = jobInput.value;
@@ -24,14 +19,15 @@ function editForm(){
 
 function toggleModal(){
     modal.classList.toggle('modal_open');
-    modal.classList.toggle('modal');
+    
 
     if(modal.classList.contains='modal_open'){
-      nameInput.value = nameInput.value;
-      jobInput.value = jobInput.value;
+      nameInput.value = profileName.textContent;
+      jobInput.value = profileJob.textContent;
     }
 }
 
+form.addEventListener('submit', handleFormSubmit);
 
 
 editButton.addEventListener('click', toggleModal);

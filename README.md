@@ -24,5 +24,7 @@ My project can be found at: https://trunions.github.io/web_project_4/.
 
  11/09/2020: I made my page reactive to the width of the page. The layout should now not break as the page is made smaller. I also fixed some margins in the pop up page and profile block. 
 
+ 11/10/2020: I cleaned up my code further and fixed some layout breaks on certain screen widths. 
 
-* Thank you to whoever reviews my code!  
+
+* Thank you Marina Lukianova for reviewing my project! You were very helpful! 
