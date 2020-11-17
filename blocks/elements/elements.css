@@ -1,19 +1,25 @@
-@import url(../elements/__list/elements__list.css);
 @import url(../elements/__card/elements__card.css);
 @import url(../elements/__card-text/elements__card-text.css);
 @import url(../elements/__card-heart/elements__card-heart.css);
 @import url(../elements/__card-image/elements__card-image.css);
-@import url(../elements/__card-bottom/elements__card-bottom.css);
+@import url(../elements/__card-delete/elements__card-delete.css);
 
 
 .elements{
     max-width: 880px;
     margin: auto;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 17px;
 
 }
 
-@media screen and (max-width:751px){
+@media screen and (max-width:1060px){
     .elements{
-        max-width:282px;
+        grid-template: 1fr 1fr 1fr/1fr 1fr
+
     }
 }
