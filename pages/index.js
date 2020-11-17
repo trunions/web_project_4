@@ -1,7 +1,7 @@
 const editButton = document.querySelector(".profile__info-button");
 const closeButton = document.querySelector(".form__button-close");
 const form = document.querySelector(".form");
-const modal= document.querySelector('.modal');
+const modal= document.querySelector('.popup');
 const nameInput = document.querySelector('.form__input_type_name');
 const jobInput = document.querySelector('.form__input_type_job');
 const profileName = document.querySelector('.profile__info-title');
@@ -18,10 +18,10 @@ function handleFormSubmit(event){
 }
 
 function toggleModal(){
-    modal.classList.toggle('modal_open');
+    modal.classList.toggle('popup_type_edit');
     
 
-    if(modal.classList.contains='modal_open'){
+    if(modal.classList.contains='popup_type_edit'){
       nameInput.value = profileName.textContent;
       jobInput.value = profileJob.textContent;
     }

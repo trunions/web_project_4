@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
     <meta charset='UTF-8'>
@@ -20,77 +20,67 @@
     <main>
 
         <section class='profile'>
-                <img class='profile__avatar-pic' src='./images/profile_pic.jpg' alt='profile picture'>
+            <img class='profile__avatar-pic' src='./images/profile_pic.jpg' alt='profile picture'>
             <div class='profile__info'>
                 <h1 class='profile__info-title'>Jacques Cousteau</h1>
-                <button class='profile__info-button' type='button' aria-label="edit button">
+                <button class='profile__info-button' type='button' aria-label='edit button'>
                 </button>
                 <p class='profile__info-subtitle'>Explorer</p>
             </div>
-            <button class='profile__button-add' type='button' aria-label="add button">
+            <button class='profile__button-add' type='button' aria-label='add button'>
             </button>
-            
+
         </section>
 
-        <section class="elements">
-            <ul class='elements__list'>
-                <li class='elements__card'>
-                    <img class='elements__card-image' src='./images/yosemite-valley.jpg' alt='Yosemite Valley'>
-                    <div class='elements__card-bottom'>
-                        <h2 class='elements__card-text'>Yosemite Valley</h2>
-                        <button class='elements__card-heart' type='button' aria-label="heart">
-                        </button>
-                    </div>
+        <section class='elements'>
+            <figure class='elements__card'>
+                <img class='elements__card-image' src='./images/yosemite-valley.jpg' alt='Yosemite Valley'>
+                <figcaption class='elements__card-text'>Yosemite Valley</figcaption>
+                    <button class='elements__card-heart' type='button' aria-label='heart'>
+                    </button>
+                    <button class='elements__card-delete' type='button' aria-label="delete"></button>
+            </figure>
 
-                </li>
-                <li class='elements__card'>
-                    <img class='elements__card-image' src='./images/lake-louise.jpg' alt='Lake Louise'>
-                    <div class='elements__card-bottom'>
-                        <h2 class='elements__card-text'>Lake Louise</h2>
-                        <button class='elements__card-heart' type='button' aria-label="heart">
-                        </button>
-                    </div>
+            <figure class='elements__card'>
+                <img class='elements__card-image' src='./images/lake-louise.jpg' alt='Lake Louise'>
+                <figcaption class='elements__card-text'>Lake Louise</figcaption>
+                    <button class='elements__card-heart' type='button' aria-label='heart'>
+                    </button>
+                    <button class='elements__card-delete' type='button' aria-label="delete"></button>
+            </figure>
 
-                </li>
-                <li class='elements__card'>
-                    <img class='elements__card-image' src='./images/bald-mountains.jpg' alt='Bald Mountains'>
-                    <div class='elements__card-bottom'>
-                        <h2 class='elements__card-text'>Bald Mountains</h2>
-                        <button class='elements__card-heart' type='button' aria-label="heart">
-                        </button>
-                    </div>
+            <figure class='elements__card'>
+                <img class='elements__card-image' src='./images/bald-mountains.jpg' alt='Bald Mountains'>
+                <figcaption class='elements__card-text'>Bald Mountains</figcaption>
+                    <button class='elements__card-heart' type='button' aria-label='heart'>
+                    </button>
+                    <button class='elements__card-delete' type='button' aria-label="delete"></button>
+            </figure>
 
-                </li>
-                <li class='elements__card'>
-                    <img class='elements__card-image' src='./images/latemar.jpg' alt='Latemar'>
-                    <div class='elements__card-bottom'>
-                        <h2 class='elements__card-text'>Latemar</h2>
-                        <button class='elements__card-heart' type='button' aria-label="heart">
-                        </button>
-                    </div>
+            <figure class='elements__card'>
+                <img class='elements__card-image' src='./images/latemar.jpg' alt='Latemar'>
+                <figcaption class='elements__card-text'>Latemar</figcaption>
+                    <button class='elements__card-heart' type='button' aria-label='heart'>
+                    </button>
+                    <button class='elements__card-delete' type='button' aria-label="delete"></button>
+            </figure>
 
-                </li>
-                <li class='elements__card'>
-                    <img class='elements__card-image' src='./images/vanoise.png' alt='Vanoise National Park'>
-                    <div class='elements__card-bottom'>
-                        <h2 class='elements__card-text'>Vanoise National Park</h2>
-                        <button class='elements__card-heart' type='button' aria-label="heart">
-                        </button>
-                    </div>
+            <figure class='elements__card'>
+                <img class='elements__card-image' src='./images/vanoise.png' alt='Vanoise National Park'>
+                <figcaption class='elements__card-text'>Vanoise National Park</figcaption>
+                    <button class='elements__card-heart' type='button' aria-label='heart'>
+                    </button>
+                    <button class='elements__card-delete' type='button' aria-label="delete"></button>
+            </figure>
 
-                </li>
-                <li class='elements__card'>
-                    <img class='elements__card-image' src='./images/lago.png' alt='Lago di Braies'>
-                    <div class='elements__card-bottom'>
-                        <h2 class='elements__card-text'>Lago di Braies</h2>
-                        <button class='elements__card-heart' type='button' aria-label="heart">
-                        </button>
-                    </div>
-
-                </li>
-
-            </ul>
+            <figure class='elements__card'>
+                <img class='elements__card-image' src='./images/lago.png' alt='Lago di Braies'>
+                <figcaption class='elements__card-text'>Lago di Braies</figcaption>
+                    <button class='elements__card-heart' type='button' aria-label='heart'></button>
+                    <button class='elements__card-delete' type='button' aria-label="delete"></button>
+            </figure>
         </section>
+
     </main>
 
     <footer class='footer'>
@@ -98,19 +88,46 @@
     </footer>
 
 
-    <div class="modal">
-        <div class="modal__container">
-            <form action="#" class="form" name='form'>
-                <p class="form__title">Edit profile</p>
-                <input type='text' name='name' class="form__input form__input_type_name" value="Jacques Cousteau">
+    <div class='popup'>
+        <div class='popup__container'>
+            <form action='#' class='form' name='form'>
+                <p class='form__title'>Edit profile</p>
+                <input type='text' name='name' class='form__input form__input_type_name' value='Jacques Cousteau'>
                 <input type='text' name='job' class='form__input form__input_type_job' value='Explorer'>
-                <button class="form__button" type="submit">Save</button>
-                <button class='form__button-close' type='button' aria-label="close button"></button>
+                <button class='form__button' type='submit'>Save</button>
+                <button class='form__button-close' type='button' aria-label='close button'></button>
             </form>
-            
+
         </div>
     </div>
-
+    <div class='popup'>
+        <div class='popup__container'>
+            <form action='#' class='form'>
+                <h2 class='form__title'>New Place</h2>
+                <input type='text' name='card-title' class='form__input' placeholder="Title" required>
+                <input type='url' name='card-link' class='form__input' placeholder='Image Link' required>
+                <button class='form__save' type='submit' aria-label="Save">Create</button>
+                <button class='form__close-button' type='reset' aria-label="Close Form"></button>
+            </form>
+        </div>
+    </div>
+    <div class='popup'>
+        <div class='popup__container'>
+            <img src(unknown) alt='popup image picture' class='popup__image'>
+            <h3 class='popup__caption'></h3>
+            <button class='form__close-button' type='reset' aria-label="Close Form"></button>
+        </div>
+    </div>
+    <template class='card__template'>
+        #document-fragment
+        <figure class='elements__card'>
+            <img class='elements__card-image' src=(unknown) alt='card image'>
+            <figcaption class='elements__card-text'>Yosemite Valley</figcaption>
+                <button class='elements__card-heart' type='button' aria-label='heart'>
+                </button>
+                <button class='elements__card-delete' type='button' aria-label="delete"></button>
+        </figure>
+    </template>
 
     <script src='./pages/index.js'></script>
 </body>

@@ -1,6 +1,6 @@
 @import url(../popup/__container/popup__container.css);
 
-.popup {
+.modal {
     display: none;
     
   }
