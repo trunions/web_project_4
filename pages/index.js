@@ -33,12 +33,16 @@ const list = document.querySelector('.elements');
 //modalEdit functions
 function toggleModal(modal){
   modal.classList.toggle('popup_open');
-  
+}
 
-  if(modalEdit.classList.contains='popup_open'){
-    nameInput.value = profileName.textContent;
-    jobInput.value = profileJob.textContent;
-  }
+function handleModalEdit(e){
+  e.preventDefault();
+  
+  nameInput.value = profileName.textContent;
+  jobInput.value = profileJob.textContent;
+
+  toggleModal(modalEdit);
+
 }
 
 function handleAddFormSubmit(e){
@@ -105,9 +109,7 @@ function imageModal(link, name) {
 
 
 //modalEdit eventlisteners
-editButton.addEventListener('click', () => {
-  toggleModal(modalEdit);
-});
+editButton.addEventListener('click', handleModalEdit);
 
 formEdit.addEventListener('submit', handleAddFormSubmit);
 
