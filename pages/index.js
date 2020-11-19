@@ -29,8 +29,6 @@ const imageCloseButton = document.querySelector('.form__button_close_new-image')
 const cardTemplate = document.querySelector('.card__template').content.querySelector('.elements__card');
 const list = document.querySelector('.elements');
 
-const elementsList = document.querySelector('.elements__card');
-
 
 //modalEdit functions
 function toggleModal(modal){
@@ -98,6 +96,7 @@ function createCard(card) {
   return cardElement;
 };
 
+
 function imageModal(link, name) {
   popupImage.setAttribute('src', link);
   popupImage.setAttribute('alt', name);
@@ -134,4 +133,5 @@ imageCloseButton.addEventListener('click', () => {
 
 initialCards.forEach(card => {
   addCard(card);
+  
 });

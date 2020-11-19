@@ -3,6 +3,7 @@
 @import url(../popup/__caption/popup__caption.css);
 .popup {
     visibility: hidden;
+    display:flex;
     justify-content: center;
     align-items: center;
     width: 100%;
