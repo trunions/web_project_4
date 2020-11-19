@@ -33,52 +33,7 @@
         </section>
 
         <section class='elements'>
-            <figure class='elements__card'>
-                <img src(unknown) class='elements__card-image' src='./images/yosemite-valley.jpg' alt='Yosemite Valley'>
-                <figcaption class='elements__card-text'>Yosemite Valley</figcaption>
-                    <button class='elements__card-heart' type='button' aria-label='heart'>
-                    </button>
-                    <button class='elements__card-delete' type='button' aria-label="delete"></button>
-            </figure>
 
-            <figure class='elements__card'>
-                <img src(unknown) class='elements__card-image' src='./images/lake-louise.jpg' alt='Lake Louise'>
-                <figcaption class='elements__card-text'>Lake Louise</figcaption>
-                    <button class='elements__card-heart' type='button' aria-label='heart'>
-                    </button>
-                    <button class='elements__card-delete' type='button' aria-label="delete"></button>
-            </figure>
-
-            <figure class='elements__card'>
-                <img src(unknown) class='elements__card-image' src='./images/bald-mountains.jpg' alt='Bald Mountains'>
-                <figcaption class='elements__card-text'>Bald Mountains</figcaption>
-                    <button class='elements__card-heart' type='button' aria-label='heart'>
-                    </button>
-                    <button class='elements__card-delete' type='button' aria-label="delete"></button>
-            </figure>
-
-            <figure class='elements__card'>
-                <img src(unknown) class='elements__card-image' src='./images/latemar.jpg' alt='Latemar'>
-                <figcaption class='elements__card-text'>Latemar</figcaption>
-                    <button class='elements__card-heart' type='button' aria-label='heart'>
-                    </button>
-                    <button class='elements__card-delete' type='button' aria-label="delete"></button>
-            </figure>
-
-            <figure class='elements__card'>
-                <img src(unknown) class='elements__card-image' src='./images/vanoise.png' alt='Vanoise National Park'>
-                <figcaption class='elements__card-text'>Vanoise National Park</figcaption>
-                    <button class='elements__card-heart' type='button' aria-label='heart'>
-                    </button>
-                    <button class='elements__card-delete' type='button' aria-label="delete"></button>
-            </figure>
-
-            <figure class='elements__card'>
-                <img src(unknown) class='elements__card-image' src='./images/lago.png' alt='Lago di Braies'>
-                <figcaption class='elements__card-text'>Lago di Braies</figcaption>
-                    <button class='elements__card-heart' type='button' aria-label='heart'></button>
-                    <button class='elements__card-delete' type='button' aria-label="delete"></button>
-            </figure>
         </section>
 
     </main>
@@ -104,8 +59,10 @@
         <div class='popup__container'>
             <form action='#' class='form form_new-pic'>
                 <h2 class='form__title'>New Place</h2>
-                <input type='text' name='card-title' class='form__input form__input_type_title' placeholder="Title" required>
-                <input type='url' name='card-link' class='form__input form__input_type_image' placeholder='Image Link' required>
+                <input type='text' name='card-title' class='form__input form__input_type_title' placeholder="Title"
+                    required>
+                <input type='url' name='card-link' class='form__input form__input_type_image' placeholder='Image Link'
+                    required>
                 <button class='form__button' type='submit' aria-label="Save">Create</button>
                 <button class='form__button-close form__button_close-add' type='reset' aria-label="Close Form"></button>
             </form>
@@ -115,7 +72,8 @@
         <div class='popup__container'>
             <img alt='popup image picture' class='popup__image'>
             <h3 class='popup__caption'></h3>
-            <button class='form__button-close form__button_close_new-image' type='reset' aria-label="Close Form"></button>
+            <button class='form__button-close form__button_close_new-image' type='reset'
+                aria-label="Close Form"></button>
         </div>
     </div>
     <template class='card__template'>
@@ -123,12 +81,12 @@
         <figure class='elements__card'>
             <img src(unknown) class='elements__card-image' src=(unknown) alt='card image'>
             <figcaption class='elements__card-text'>Yosemite Valley</figcaption>
-                <button class='elements__card-heart' type='button' aria-label='heart'>
-                </button>
-                <button class='elements__card-delete' type='button' aria-label="delete"></button>
+            <button class='elements__card-heart' type='button' aria-label='heart'>
+            </button>
+            <button class='elements__card-delete' type='button' aria-label="delete"></button>
         </figure>
     </template>
-    <script src ='./pages/initialCards.js'></script> 
+    <script src='./pages/initialCards.js'></script>
     <script src='./pages/index.js'></script>
 </body>
 

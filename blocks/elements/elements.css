@@ -8,6 +8,7 @@
 
 .elements{
     max-width: 880px;
+    justify-items:center;
     margin: auto;
     padding: 0;
     list-style: none;
@@ -20,7 +21,13 @@
 
 @media screen and (max-width:1060px){
     .elements{
-        grid-template: 1fr 1fr 1fr/1fr 1fr
+        grid-template: 1fr 1fr 1fr/1fr 1fr;
 
+    }
+}
+
+@media screen and (max-width:620px){
+    .elements{
+        grid-template:1fr 1fr 1fr 1fr 1fr 1fr/1fr;
     }
 }

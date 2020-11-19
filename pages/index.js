@@ -63,7 +63,7 @@ function handleImageFormSubmit(e){
 function addCard(card) {
   const cardElement = createCard(card);
 
-  list.append(cardElement);
+  list.prepend(cardElement);
 };
 
 function createCard(card) {
@@ -133,5 +133,5 @@ imageCloseButton.addEventListener('click', () => {
 
 initialCards.forEach(card => {
   addCard(card);
-  
+
 });
