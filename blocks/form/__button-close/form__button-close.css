@@ -11,6 +11,12 @@
     cursor: pointer;
   }
 
+  .popup_type_image .form__button-close{
+    position:absolute;
+    top:-40px;
+    right:-40px;
+  }
+  
   .form__button-close:hover{
     opacity: .6;
   }

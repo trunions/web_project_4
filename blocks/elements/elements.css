@@ -3,6 +3,7 @@
 @import url(../elements/__card-heart/elements__card-heart.css);
 @import url(../elements/__card-image/elements__card-image.css);
 @import url(../elements/__card-delete/elements__card-delete.css);
+@import url(../elements/__card_heart-selected/elements__card_heart-selected.css);
 
 
 .elements{

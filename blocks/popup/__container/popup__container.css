@@ -5,6 +5,16 @@
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
 }
 
+.popup_type_image .popup__container{
+    background: transparent;
+    padding:0; 
+    flex-direction:column;
+    width:auto;
+    height:auto;
+    position:relative;
+    
+}
+
 
 @media screen and (max-width:751px){
     .popup__container{
