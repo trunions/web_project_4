@@ -1,4 +1,4 @@
-# Project 5: Around The U.S. Part II
+# Project 6: Around The U.S. Part III
 ## By Trista Runions
 
 ### Overview
@@ -8,13 +8,13 @@
 
 **Intro**
 
-This project is a continuation of my last project. This time, I added two other pop up windows. One will allow you to add additional cards to the page. The other will give you a better view of the pictures. You can also delete a card and favorite a card. 
+This project is a continuation of Projects 4 and 5. In this project, I learned about validating forms using Javascript. The text fields in the pop up windows will give an error if the input is to short, wrong, or non-existent. The "Save" and "Create" buttons are disabled unless the text fields are filled in correctly. You can either click outside of the pop up or push the "Escape" key to close the pop ups. 
 
 My project can be found at: https://trunions.github.io/web_project_4/.
 
 **Tech Used**
 
- I used Figma and Visual Studio to complete this project. I was able to use techniques like psuedo rules and different display styles like flexbox and grid. I used this project to help concrete my javascript skills.
+ I used Figma and Visual Studio to complete this project. I was able to use techniques like psuedo rules and different display styles like flexbox and grid. I used this project to practice validating my forms using javascrips. 
 
 **Plans for Finalizing Project**
 

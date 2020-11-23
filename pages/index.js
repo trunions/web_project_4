@@ -21,9 +21,9 @@ const imageInput = document.querySelector('.form__input_type_image');
 
 
 //modalImage DOM elements
-const popupImage = formImage.querySelector('.popup__image');
-const popupCaption = formImage.querySelector('.popup__caption');
-const imageCloseButton = formImage.querySelector('.form__button_close_new-image');
+const popupImage = document.querySelector('.popup__image');
+const popupCaption = document.querySelector('.popup__caption');
+const imageCloseButton = document.querySelector('.form__button_close_new-image');
 
 //elements template
 const cardTemplate = document.querySelector('.card__template').content.querySelector('.elements__card');
