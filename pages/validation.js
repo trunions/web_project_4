@@ -47,6 +47,7 @@ function enableValidation({formSelector, inputSelector, submitButtonSelector, in
         }))
         const inputs = [...form.querySelectorAll(inputSelector)];
         const button = form.querySelector(submitButtonSelector);
+        toggleButtonState(inputs, button, inactiveButtonClass);
         inputs.forEach((input) => {
             input.addEventListener('input', () => {
                 //check Input Validity
