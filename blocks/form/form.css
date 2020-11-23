@@ -1,7 +1,10 @@
 @import url(../form/__title/form__title.css);
 @import url(../form/__input/form__input.css);
 @import url(../form/__button/form__button.css);
+@import url(../form/__button_disabled/form__button_disabled.css);
 @import url(../form/__button-close/form__button-close.css);
+@import url(../form/__error/form__error.css);
+@import url(../form/__input_type_error/form__input_type_error.css);
 
 
 .form{

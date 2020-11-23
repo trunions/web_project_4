@@ -21,38 +21,35 @@ const imageInput = document.querySelector('.form__input_type_image');
 
 
 //modalImage DOM elements
-const popupImage = document.querySelector('.popup__image');
-const popupCaption = document.querySelector('.popup__caption');
-const imageCloseButton = document.querySelector('.form__button_close_new-image');
+const popupImage = formImage.querySelector('.popup__image');
+const popupCaption = formImage.querySelector('.popup__caption');
+const imageCloseButton = formImage.querySelector('.form__button_close_new-image');
 
 //elements template
 const cardTemplate = document.querySelector('.card__template').content.querySelector('.elements__card');
 const list = document.querySelector('.elements');
 
+//errorMessage
+const errorMessage = modalNewImage.querySelector('.form__input');
 
-//modalEdit functions
+
+//toggleModal function
 function toggleModal(modal){
   modal.classList.toggle('popup_open');
 }
 
-function handleModalEdit(e){
-  e.preventDefault();
-  
-  nameInput.value = profileName.textContent;
-  jobInput.value = profileJob.textContent;
-
-  toggleModal(modalEdit);
-
+//openModal function
+function openModal(modal){
+  toggleModal(modal);
+  window.addEventListener('keydown', escKeyClose);
+  modal.addEventListener('click', closePopup);
 }
 
-function handleAddFormSubmit(e){
-  e.preventDefault();
- 
-  profileName.textContent = nameInput.value;
-  profileJob.textContent = jobInput.value;
-
-  toggleModal(modalEdit);
-
+//closeModal function
+function closeModal(modal){
+  toggleModal(modal);
+  window.removeEventListener('keydown', escKeyClose);
+  modal.removeEventListener('click', closePopup);
 }
 
 //modalNewImage functions
@@ -61,15 +58,31 @@ function handleImageFormSubmit(e){
 
   addCard({name: titleInput.value, link: imageInput.value});
 
-  toggleModal(modalNewImage);
+  openModal(modalNewImage);
 };
 
-function addCard(card) {
-  const cardElement = createCard(card);
-
-  list.prepend(cardElement);
+//imageModal function
+function imageModal(link, name) {
+  popupImage.setAttribute('src', link);
+  popupImage.setAttribute('alt', name);
+  popupCaption.textContent = name;
 };
 
+//closePopup function
+function closePopup(e){
+  if(e.target === this || e.target === this.querySelector('.form__button-close')) {
+    closeModal(this);
+  }
+}
+
+//close popups with escape key function
+function escKeyClose(e){
+  if(e.key === 'Escape'){
+    closeModal(document.querySelector('.popup_open'));
+  }
+}
+
+//create new cards functions
 function createCard(card) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardText = cardElement.querySelector('.elements__card-text');
@@ -93,47 +106,34 @@ function createCard(card) {
   cardImage.addEventListener('click', (e) =>{
     
     imageModal(card.link, card.name);
-    toggleModal(modalImage);
+    openModal(modalImage);
 
   });
 
   return cardElement;
 };
 
+function addCard(card) {
+  const cardElement = createCard(card);
 
-function imageModal(link, name) {
-  popupImage.setAttribute('src', link);
-  popupImage.setAttribute('alt', name);
-  popupCaption.textContent = name;
+  list.prepend(cardElement);
 };
-
-
-//modalEdit eventlisteners
-editButton.addEventListener('click', handleModalEdit);
-
-formEdit.addEventListener('submit', handleAddFormSubmit);
-
-closeButton.addEventListener('click' ,() => {
-  toggleModal(modalEdit);
-});
-
-//modalNewImage event listeners
-addButton.addEventListener('click', () => {
-  toggleModal(modalNewImage);
-});
-
-formImage.addEventListener('submit' ,handleImageFormSubmit);
-
-addCloseButton.addEventListener('click', () => {
-  toggleModal(modalNewImage);
-});
-
-//modalImage event listeners
-imageCloseButton.addEventListener('click', () => {
-  toggleModal(modalImage);
-});
 
 initialCards.forEach(card => {
   addCard(card);
 
 });
+
+//eventlisteners
+addButton.addEventListener('click', (e) => openModal(modalNewImage));
+editButton.addEventListener('click',(e) => openModal(modalEdit));
+
+modalEdit.addEventListener('submit', (e) => {
+  e.preventDefault();
+  profileName.textContent = nameInput.value; 
+  profileJob.textContent = jobInput.value;
+  
+  closeModal(modalEdit);
+});
+
+formImage.addEventListener('submit' ,handleImageFormSubmit);

@@ -45,11 +45,13 @@
 
     <div class='popup popup_type_edit'>
         <div class='popup__container'>
-            <form action='#' class='form form_edit' name='form'>
+            <form action='#' class='form form_edit' name='form' novalidate>
                 <p class='form__title'>Edit profile</p>
-                <input type='text' name='name' class='form__input form__input_type_name' value='Jacques Cousteau' required>
-                <input type='text' name='job' class='form__input form__input_type_job' value='Explorer' required>
-                <button class='form__button' type='submit'>Save</button>
+                <input id='profile-title' type='text' name='name' class='form__input form__input_type_name' placeholder='Jacques Cousteau' required='' minlength=2 maxlength=40>
+                <span id='profile-title-error' class='form__error'></span>
+                <input id='profile-about' type='text' name='job' class='form__input form__input_type_job' placeholder='Explorer' required='' minlength=2 maxlength=200>
+                <span id='profile-about-error' class='form__error'></span>
+                <button class='form__button' type='submit'aria-label="Save">Save</button>
                 <button class='form__button-close' type='button' aria-label='close button'></button>
             </form>
 
@@ -57,13 +59,15 @@
     </div>
     <div class='popup popup_type_new-image'>
         <div class='popup__container'>
-            <form action='#' class='form form_new-pic'>
+            <form action='#' class='form form_new-pic' novalidate>
                 <h2 class='form__title'>New Place</h2>
-                <input type='text' name='card-title' class='form__input form__input_type_title' placeholder="Title"
-                    required>
-                <input type='url' name='card-link' class='form__input form__input_type_image' placeholder='Image Link'
-                    required>
-                <button class='form__button' type='submit' aria-label="Save">Create</button>
+                <input id='image-title' type='text' name='card-title' class='form__input form__input_type_title' placeholder="Title"
+                    required minlength=2 maxlength=30>
+                    <span id='image-title-error' class='form__error'></span>
+                <input id='image-url' type='url' name='card-link' class='form__input form__input_type_image' placeholder='Image Link'
+                    required=''>
+                    <span id='image-url-error' class='form__error'></span>
+                <button class='form__button' type='submit' aria-label="Create">Create</button>
                 <button class='form__button-close form__button_close-add' type='reset' aria-label="Close Form"></button>
             </form>
         </div>
@@ -86,6 +90,7 @@
             <button class='elements__card-delete' type='button' aria-label="delete"></button>
         </figure>
     </template>
+    <script src ='./pages/validation.js'></script>
     <script src='./pages/initialCards.js'></script>
     <script src='./pages/index.js'></script>
 </body>

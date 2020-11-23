@@ -2,13 +2,15 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    margin-left: 36px;
+    /*margin-left: 36px;
     margin-bottom: 13.3px;
-    margin-top:54px;
+    margin-top:54px;*/
+    margin:13px 36px 0;
     border:none;
     border-bottom: 1px solid;
     border-color:rgba(0, 0, 0, 0.2);
     width: 358px;
+    outline:none;
     
     
   }
@@ -24,8 +26,8 @@
   }
 
 
-  .form__input:nth-child(3){
-    margin-top:30px;
+  /*.form__input:nth-child(2){
+    margin-top:34px;
   }
 
  
