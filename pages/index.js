@@ -128,7 +128,15 @@ initialCards.forEach(card => {
 
 //eventlisteners
 addButton.addEventListener('click', (e) => openModal(modalNewImage));
-editButton.addEventListener('click',(e) => openModal(modalEdit));
+editButton.addEventListener('click',(e) => {
+  openModal(modalEdit)
+
+  if(modalEdit.classList.contains='popup_open'){
+    nameInput.value = profileName.textContent;
+    jobInput.value = profileJob.textContent;
+  }
+
+});
 
 modalEdit.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -136,11 +144,6 @@ modalEdit.addEventListener('submit', (e) => {
   profileJob.textContent = jobInput.value;
   
   closeModal(modalEdit);
-
-  if(modalEdit.classList.contains='popup_open'){
-    profileName.textContent = nameInput.value;
-    profileJob.textContent = jobInput.value;
-  }
 });
 
 formImage.addEventListener('submit' ,handleImageFormSubmit);
